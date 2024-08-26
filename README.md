@@ -1,6 +1,5 @@
-# FastAPI News Application
-
-This FastAPI application allows users to browse news articles, comment on them, and sign up for an account. It also supports anonymous browsing, where users can view news content without registering or logging in.
+# FastAPI FakeNews Application
+This FastAPI application is designed to illustrate how we can create lazy registration or anonymous browsing in FastAPI. It allows users to browse news articles, comment on them, and sign up for an account, supporting anonymous browsing where users can view news content without registering or logging in.
 
 ## Table of Contents
 - [Features](#features)
@@ -15,6 +14,7 @@ This FastAPI application allows users to browse news articles, comment on them, 
   - [Install Dependencies](#3-install-dependencies)
   - [Setup database](#4-setup-database)
   - [Accessing the Application](#5-accessing-the-application)
+- [Roadmap](#roadmap)
 - [License](#license)
 
 ## Features
@@ -160,6 +160,11 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
 * Access the application by navigating to [http://localhost:8000](http://localhost:8000) in your browser.
+
+## Roadmap
+Future developments for the FastAPI FakeNews Application include:
+
+* OAuth Authorization (Not Only Authentication): Implementing OAuth authorization to allow more granular control over what users can do within the application, beyond just authenticating their identity.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE file](/LICENSE) for details.
