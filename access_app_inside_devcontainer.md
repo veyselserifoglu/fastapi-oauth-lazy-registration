@@ -1,4 +1,4 @@
-### Access the application inside a devcontainer
+## Access the application inside a devcontainer
 
 #### 1. Open the Project in VS Code
 
