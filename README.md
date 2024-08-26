@@ -162,4 +162,4 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 * Access the application by navigating to [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [!LICENSE file](/LICENSE) for details.
