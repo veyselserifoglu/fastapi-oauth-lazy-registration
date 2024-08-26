@@ -6,10 +6,6 @@ from app.routers.auth import auth_router
 from app.routers.news import news_router
 from app.core.templates import templates
 
-
-# Import your models
-from app.models import users, sessions
-
 app = FastAPI()
 
 # Create tables
@@ -33,6 +29,7 @@ app.add_middleware(
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     return templates.TemplateResponse("landing_page.html", {"request": request})
+
 
 # Include routers here in the future
 app.include_router(auth_router)

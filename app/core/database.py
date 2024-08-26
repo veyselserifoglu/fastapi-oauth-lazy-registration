@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+from fastapi import Request
 from .config import settings
 
 SQLALCHEMY_DATABASE_URL = settings.DATABASE_URL 
@@ -19,8 +20,11 @@ SessionLocal = sessionmaker(
 Base = declarative_base()
 
 # Dependency to get a session
-def get_db():
+def get_db(request: Request):
     db = SessionLocal()
+    request.state.db = db
+    print(request.state)
+
     try:
         yield db
     finally:

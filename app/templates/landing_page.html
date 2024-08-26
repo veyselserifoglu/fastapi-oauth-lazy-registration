@@ -3,16 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To FakeNews</title>
+    <title>Login Options</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+        .login-container {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        .btn-custom {
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Welcome To FakeNews Site</h1>
-        <div class="d-flex justify-content-center mt-4">
-            <a href="/news/news" class="btn btn-primary mx-2">Check News Anonymously</a>
-            <a href="/auth/signup" class="btn btn-success mx-2">Sign Up / Log In</a>
+    <div class="login-container">
+        <h4 class="mb-4">Anonymous Login</h4>
+        <div class="d-grid gap-2">
+            <a href="/news/news" class="btn btn-outline-secondary btn-custom">Connect Anonymously</a>
+        </div>
+        <hr>
+        <div class="d-grid gap-2">
+            <!-- <a href="/auth/login" class="btn btn-primary btn-custom">Login</a> -->
+            <!-- <a href="/auth/signup" class="btn btn-success btn-custom">Sign Up</a> -->
+            <button class="btn btn-primary btn-custom" disabled>Login</button>
+            <button class="btn btn-success btn-custom" disabled>Sign Up</button>
+            
         </div>
     </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
