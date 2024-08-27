@@ -22,9 +22,7 @@ Base = declarative_base()
 # Dependency to get a session
 def get_db(request: Request):
     db = SessionLocal()
-    request.state.db = db
-    print(request.state)
-
+    
     try:
         yield db
     finally:
